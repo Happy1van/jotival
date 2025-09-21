@@ -1,0 +1,81 @@
+/* Reset default margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1f1f1f;
+  padding: 10px 20px;
+  z-index: 100;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: #e0e0e0;
+  display: inline-block;
+}
+
+header nav {
+  float: right;
+  margin-top: 5px;
+}
+
+header nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.post {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.post h2 {
+  font-size: 1.25rem;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+}
+
+.post .meta {
+  font-size: 0.875rem;
+  color: #757575;
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
