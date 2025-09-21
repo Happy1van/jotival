@@ -6,30 +6,26 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-  background-color: #121212;
-  color: #e0e0e0;
-  line-height: 1.6;
-}
-
 header {
-  position: fixed;
+  position: static;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #1f1f1f;
+  background-color: #181a1b;
   padding: 10px 20px;
   z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header h1 {
-  font-size: 1.5rem;
-  color: #e0e0e0;
-  display: inline-block;
+  font-size: 3rem;
+  color: #000000;
+  margin-bottom: 5px;
 }
 
 header nav {
-  float: right;
   margin-top: 5px;
 }
 
@@ -45,17 +41,85 @@ header nav a:hover {
   text-decoration: underline;
 }
 
+/* Login page styles */
+body.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--background, #181a1b);
+  margin: 0;
+}
+
+.login-container {
+  background: #181a1b;
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 350px;
+}
+.login-container h2 {
+  margin-top: 0;
+  color: #22223b;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.login-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #4a4e69;
+  font-weight: 500;
+}
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #c9c9c9;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #f4f4f4;
+  color: #22223b;
+}
+.login-container button {
+  width: 100%;
+  padding: 0.7rem;
+  background: #22223b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.login-container button:hover {
+  background: #4a4e69;
+}
+
+body .main-page {
+  background-color: #181a1b;
+  color: #777777;
+  line-height: 1.6;
+}
+
 main {
   margin-top: 60px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .post {
-  background-color: #1e1e1e;
+  background-color: #181a1b;
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 700px;
+  text-align: justify;
 }
 
 .post h2 {
@@ -73,9 +137,9 @@ main {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #1f1f1f;
+  background-color: #181a1b;
   color: #e0e0e0;
-  position: fixed;
+  position: static;
   bottom: 0;
   width: 100%;
 }
